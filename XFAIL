@@ -2920,3 +2920,9 @@
 
 # Missing support for complex_i128 on various architectures / compilers
 { "result": "FAIL", "id": "^.*complex_i128.c.*" }
+# Temporary ignore for UNRESOLVED tests on Android due to lack of complex_i128 support
+{ "result": "UNRESOLVED", "id": "^.*complex_i128.c.*" }
+
+# Ignore clang errors about dumpspecs on macOS
+{ "result": "ERROR", "id": "^.*clang: error: unsupported option '-dumpspecs'.*" }
+{ "result": "UNRESOLVED", "id": "^.*testcase '../../testsuite/libffi.closures/closure.exp' aborted due to Tcl error.*" }
