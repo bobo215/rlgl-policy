@@ -2917,3 +2917,6 @@
 # These need to be fixed, and are just here to track regressions.
 
 { "result": "FAIL", "host": "^*-darwin.*", "id": "^.*unwindtest.*" } 2026-07-31
+
+# Missing support for complex_i128 on various architectures / compilers
+{ "result": "FAIL", "id": "^.*complex_i128.c.*" }
